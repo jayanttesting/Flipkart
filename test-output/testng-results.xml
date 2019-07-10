@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="24954" started-at="2019-07-10T07:08:06Z" finished-at="2019-07-10T07:08:31Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="24954" started-at="2019-07-10T07:08:06Z" finished-at="2019-07-10T07:08:31Z">
+      <class name="com.flipkart.FlipkartOrder">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.flipkart.FlipkartOrder@31a5c39e]" name="setup" is-config="true" duration-ms="4213" started-at="2019-07-10T12:38:02Z" finished-at="2019-07-10T12:38:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="launch()[pri:0, instance:com.flipkart.FlipkartOrder@31a5c39e]" name="launch" duration-ms="7177" started-at="2019-07-10T12:38:06Z" finished-at="2019-07-10T12:38:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method status="PASS" signature="placeorder()[pri:0, instance:com.flipkart.FlipkartOrder@31a5c39e]" name="placeorder" duration-ms="17756" started-at="2019-07-10T12:38:13Z" finished-at="2019-07-10T12:38:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- placeorder -->
+        <test-method status="PASS" signature="terminate()[pri:0, instance:com.flipkart.FlipkartOrder@31a5c39e]" name="terminate" is-config="true" duration-ms="1407" started-at="2019-07-10T12:38:31Z" finished-at="2019-07-10T12:38:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminate -->
+      </class> <!-- com.flipkart.FlipkartOrder -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
