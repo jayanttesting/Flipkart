@@ -42,14 +42,15 @@ public class FlipkartOrder {
 		objelements = PageFactory.initElements(driver, locators.class);
 		objelements.popupclose();
 		Log.info("Pop is closed");
+		locators local = new locators();
 
 		// print logs
 
-		locators.entertext("Apple iPhone X");
-		locators.click_button();
+		local.entertext("Apple iPhone X");
+		local.click_button();
 
 		driver.manage().timeouts().implicitlyWait(5000, TimeUnit.SECONDS);
-		locators.iphone();
+		local.iphone();
 		List<WebElement> options = driver.findElements(By.xpath("//div[@class='_3wU53n']"));
 		System.out.println("Size of Autosuggest box is" + options.size());
 		Log.info("print the size of elemnts in textbox");
@@ -63,19 +64,19 @@ public class FlipkartOrder {
 		for (String handle1 : driver.getWindowHandles()) {
 			driver.switchTo().window(handle1);
 		}
-		locators.cartbutton();
-		locators.placeorder();
+		local.cartbutton();
+		local.placeorder();
 		String username = dataparsing.userid();
 		String password = dataparsing.password();
-		locators.enteremail(username);
-		locators.continueclick();
-		locators.enterpassword(password);
-		locators.login();
+		local.enteremail(username);
+		local.continueclick();
+		local.enterpassword(password);
+		local.login();
 
 		// Adding Address
-		locators.addadress();
-		locators.address_name("Promobi");
-		locators.address_address("ProMobi 1st Floor, Plot no. 65, Sector 44, Near Huda City Centre, Gurugram");
+		local.addadress();
+		local.address_name("Promobi");
+		local.address_address("ProMobi 1st Floor, Plot no. 65, Sector 44, Near Huda City Centre, Gurugram");
 
 	}
 

@@ -8,13 +8,13 @@ import Selenium.Utilities.dataparsing;
 public class locators {
 
 	@FindBy(name = "q")
-	static WebElement framelocator;
+	WebElement framelocator;
 
 	@FindBy(xpath = "//button[@type='submit' and @class='vh79eN']")
 	WebElement searchbutton;
 
 	@FindBy(xpath = "((//div[contains(text(),'iPhone')])[4]//parent::div)[1]/../..")
-	static WebElement iphone_spacegrey;
+	WebElement iphone_spacegrey;
 
 	@FindBy(xpath = "//button[@class='_2AkmmA _2Npkh4 _2MWPVK']")
 	WebElement Addtocart;
@@ -23,40 +23,40 @@ public class locators {
 	WebElement popup;
 
 	@FindBy(xpath = "//span[contains(text(),'Place Order')]")
-	static WebElement order;
+	WebElement order;
 
 	@FindBy(xpath = "//button[@class='vh79eN']")
-	static WebElement button;
+	WebElement button;
 
 	@FindBy(xpath = "//input[@class='_2zrpKA _14H79F']")
-	static WebElement email;
+	WebElement email;
 
 	@FindBy(xpath = "//button[@class='_2AkmmA _1poQZq _7UHT_c']")
-	static WebElement continuebutton;
+	WebElement continuebutton;
 
 	@FindBy(xpath = "//button[@class='_2AkmmA _2Npkh4 _2MWPVK']")
-	static WebElement gotocart;
+	WebElement gotocart;
 
 	@FindBy(xpath = "//input[@class='_2zrpKA _3v41xv _14H79F']")
-	static WebElement password;
+	WebElement password;
 
 	@FindBy(xpath = "//img[@class='_2hT5Bw']")
-	static WebElement addnewaddress;
+	WebElement addnewaddress;
 
 	@FindBy(xpath = " //input[@name='name']")
-	static WebElement inputname;
+	WebElement inputname;
 
 	@FindBy(xpath = " //textarea[@name='addressLine1']")
-	static WebElement inoputaddress;
+	WebElement inoputaddress;
 
 	@FindBy(xpath = "//button[@class='_2AkmmA _1poQZq _7UHT_c']")
-	static WebElement loginbutton;
+	WebElement loginbutton;
 
-	public static void entertext(String str) {
+	public void entertext(String str) {
 		framelocator.sendKeys(str);
 	}
 
-	public static void click_button() {
+	public void click_button() {
 		button.click();
 	}
 
@@ -64,7 +64,7 @@ public class locators {
 		searchbutton.click();
 	}
 
-	public static void iphone() {
+	public void iphone() {
 		iphone_spacegrey.click();
 	}
 
@@ -76,39 +76,39 @@ public class locators {
 		popup.click();
 	}
 
-	public static void placeorder() {
+	public void placeorder() {
 		order.click();
 	}
 
-	public static void enteremail(String str) {
+	public void enteremail(String str) {
 		email.sendKeys(str);
 	}
 
-	public static void continueclick() {
+	public void continueclick() {
 		continuebutton.click();
 	}
 
-	public static void cartbutton() {
+	public void cartbutton() {
 		gotocart.click();
 	}
 
-	public static void enterpassword(String str) {
+	public void enterpassword(String str) {
 		password.sendKeys(str);
 	}
 
-	public static void addadress() {
+	public void addadress() {
 		addnewaddress.click();
 	}
 
-	public static void address_name(String str) {
+	public void address_name(String str) {
 		inputname.sendKeys(str);
 	}
 
-	public static void address_address(String str) {
+	public void address_address(String str) {
 		inoputaddress.sendKeys(str);
 	}
 
-	public static void login() {
+	public void login() {
 		loginbutton.click();
 	}
 
